@@ -1,0 +1,20 @@
+.square{
+    background-color: rgb(141, 190, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 167px;
+    height: 167px;
+    border: 5px solid black;
+    margin: 1rem;
+    font-size: 7rem;
+}
+
+.X{
+    color: red;
+}
+
+.Y{
+    color: black;
+}
