@@ -4,7 +4,7 @@ import React from 'react'
 const Square = (props) => {
     const {value, onClick } = props
   return (
-    <button onClick={onClick} className="square X">
+    <button onClick={onClick} className={`square ${value}`}>
         {value}
     </button>
   )
