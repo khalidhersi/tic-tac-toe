@@ -1,6 +1,6 @@
 import "./Game.css";
-import React, { useState } from 'react'
-import Board from "../Board/Board"
+import React, { useState } from "react";
+import Board from "../Board/Board";
 
 const Game = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -43,10 +43,11 @@ const Game = () => {
   const winningCombinations = [];
 
   // Pushing each directional Win into winningCombinations Array
-  allHorizontalWins.map((horizontalWin) => winningCombinations.push(horizontalWin));
+  allHorizontalWins.map((horizontalWin) =>
+    winningCombinations.push(horizontalWin)
+  );
   allVerticalWins.map((verticalWin) => winningCombinations.push(verticalWin));
   allDiaganalWins.map((diaganalWin) => winningCombinations.push(diaganalWin));
-
 
   // Win Logic
   const isWinner = (squares) => {
@@ -63,28 +64,34 @@ const Game = () => {
     return null;
   };
 
-// Dynamically changes Text on Screen to show whose turn it is and who won.
-  const winner = isWinner(squares)
-  let screenText = ``
-  if(winner){
-    screenText = `${winner} is the Winner!!!`
-  }
-  else {
+  // Dynamically changes Text on Screen to show whose turn it is and who won.
+  const winner = isWinner(squares);
+  let screenText = ``;
+  if (winner) {
+    screenText = `${winner} is the Winner!!!`;
+  } else {
     if (xTurn) {
-      screenText = `It's X's turn.`
+      screenText = `It's X's turn.`;
     } else {
-      screenText = `It's O's turn.`
+      screenText = `It's O's turn.`;
     }
   }
-  
+
   return (
     <div className="game">
       <h1 className="game__title">Tic-Tac-Toe</h1>
       <h2 className="game__text">{screenText}</h2>
-      <Board squares={squares} handleClick={handleClick}/>
-      <button className="game__btn" onClick={() => {setSquares(Array(9).fill(null))}}>Reset</button>
+      <Board squares={squares} handleClick={handleClick} />
+      <button
+        className="game__btn"
+        onClick={() => {
+          setSquares(Array(9).fill(null));
+        }}
+      >
+        Reset
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Game
+export default Game;

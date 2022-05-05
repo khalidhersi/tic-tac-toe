@@ -1,8 +1,8 @@
-.board{
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: repeat(3, 1fr);
-    position: relative;
-    bottom: 3rem;
+.board {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: repeat(3, 1fr);
+  position: relative;
+  bottom: 3rem;
 }

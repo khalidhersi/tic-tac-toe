@@ -3,13 +3,13 @@ import React from "react";
 import Square from "../Square/Square";
 
 const Board = (props) => {
-  const {squares, handleClick  } = props
+  const { squares, handleClick } = props;
 
-// Square component JSX
+  // Square component JSX
   const squareJSX = (index) => {
-    return <Square value={squares[index]} onClick={() => handleClick(index)} />
-  }
-   
+    return <Square value={squares[index]} onClick={() => handleClick(index)} />;
+  };
+
   // Creating board
   return (
     <div className="board">
@@ -26,7 +26,7 @@ const Board = (props) => {
       <div className="board__row">
         {squareJSX(6)}
         {squareJSX(7)}
-        {squareJSX(8)}      
+        {squareJSX(8)}
       </div>
     </div>
   );

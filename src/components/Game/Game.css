@@ -1,32 +1,31 @@
-.game{
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+.game {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.game__title{
-    font-size: 6rem;
-    position: relative;
-    bottom: 5rem;
+.game__title {
+  font-size: 6rem;
+  position: relative;
+  bottom: 5rem;
 }
-.game__text{
-    position: relative;
-    bottom: 4.5rem;
-    font-size: 3.5rem;
-    position: relative;
-    color: red;
+.game__text {
+  position: relative;
+  bottom: 4.5rem;
+  font-size: 3.5rem;
+  position: relative;
+  color: red;
 }
-.game__btn{
-    position: relative;
-    top: 2.5rem;
-    font-size: 3rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background-color: rgb(255, 228, 141);
-    color: black;
-    border: 5px solid black;
-
+.game__btn {
+  position: relative;
+  top: 2.5rem;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(255, 228, 141);
+  color: black;
+  border: 5px solid black;
 }
