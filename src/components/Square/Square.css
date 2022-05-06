@@ -12,9 +12,12 @@
 }
 
 .X {
-  color: red;
-}
+  color: black;
+  background-color: white;}
 
 .O {
-  color: black;
+  color: white;
+  background-color: black;
 }
+
+
