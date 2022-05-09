@@ -1,3 +1,4 @@
+
 .square {
   background-color: rgb(141, 190, 255);
   display: flex;
@@ -19,4 +20,16 @@
 .O {
   color: white;
   background-color: black;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 585px) {
+  .square {
+    width: 14vh;
+    height: 14vh;
+    margin: 0.5rem;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
 }
